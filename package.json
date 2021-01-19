@@ -1,14 +1,17 @@
 {
   "name": "@ljohanaalvarez/md-links",
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/" 
+  },
   "version": "1.0.0",
   "dependencies": {
     "jsdom": "^16.4.0",
     "marked": "^1.2.7"
   },
   "description": "Librería que te ayudará a encontrar links en tus archivos.md y si lo necesitas puedes validar si estan rotos o no",
-  "main": "./bin/cli.js",
+  "main": "bin/cli.js",
   "bin": {
-    "mdlinks": "./bin/cli.js"
+    "mdlinks": "bin/cli.js"
   },
   "directories": {
     "test": "test"
