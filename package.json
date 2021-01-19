@@ -1,8 +1,40 @@
 {
-  "name": "md-links",
-  "version": "0.1.0",
+  "name": "@ljohanaalvarez/md-links",
+  "version": "1.0.0",
   "dependencies": {
     "jsdom": "^16.4.0",
     "marked": "^1.2.7"
-  }
+  },
+  "description": "Librería que te ayudará a encontrar links en tus archivos.md y si lo necesitas puedes validar si estan rotos o no",
+  "main": "./bin/cli.js",
+  "bin": {
+    "mdlinks": "./bin/cli.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljohanaalvarez/bog001-md-links.git"
+  },
+  "keywords": [
+    "markdown",
+    ".md",
+    "nodejs",
+    "javascript"
+  ],
+  "author": {
+    "name": "L Johana Álvarez",
+    "email": "l.johanaalvarez@gmail.com",
+    "url": "https://github.com/ljohanaalvarez"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ljohanaalvarez/bog001-md-links/issues"
+  },
+  "homepage": "https://github.com/ljohanaalvarez/bog001-md-links#readme"
 }
