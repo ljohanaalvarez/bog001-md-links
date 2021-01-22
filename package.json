@@ -1,28 +1,29 @@
 {
   "name": "@ljohanaalvarez/md-links",
-  "publishConfig": { 
-    "registry": "https://npm.pkg.github.com/" 
-  },
-  "version": "1.0.0",
+  "version": "1.0.3",
   "dependencies": {
     "jsdom": "^16.4.0",
     "marked": "^1.2.7"
   },
   "description": "Librería que te ayudará a encontrar links en tus archivos.md y si lo necesitas puedes validar si estan rotos o no",
-  "main": "bin/cli.js",
+  "main": "./src/index.js",
   "bin": {
-    "mdlinks": "bin/cli.js"
+    "mdlinks": "./bin/cli.js"
   },
   "directories": {
     "test": "test"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ljohanaalvarez/bog001-md-links.git"
+    "url": "https://github.com/ljohanaalvarez/bog001-md-links.git"
   },
   "keywords": [
     "markdown",
@@ -30,10 +31,11 @@
     "nodejs",
     "javascript"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": {
-    "name": "L Johana Álvarez",
-    "email": "l.johanaalvarez@gmail.com",
-    "url": "https://github.com/ljohanaalvarez"
+    "name": "L Johana Álvarez <l.johanaalvarez@gmail.com>"
   },
   "license": "MIT",
   "bugs": {
