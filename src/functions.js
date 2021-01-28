@@ -44,9 +44,7 @@ const createObjectLink = (nodeList, file) => {
 
 const getProtocol = (link) => {
   const url = new URL(link);
-  console.log('url=>',url)
   let protocol = url.protocol;
-  console.log(protocol)
   protocol === 'https:' ? (protocol = https) : (protocol = http);
   return protocol;
 };

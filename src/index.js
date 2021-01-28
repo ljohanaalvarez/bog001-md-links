@@ -13,8 +13,8 @@ const mdLinks = (namePath, options = { validate: false }) => {
       .then((res) => {
         const links = functions.extractLinks(res);
         const result = functions.createObjectLink(links, namePath);
-        const newResponse = [];
         if (options.validate) {
+          const newResponse = [];
           result.forEach((element) => {
             const myPromiseStatus = functions.validateLinkStatus(element);
             newResponse.push(myPromiseStatus);
