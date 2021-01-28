@@ -19,6 +19,14 @@ describe('mdLinks', () => {
     return expect(mdLinks.mdLinks(namePath).catch(new Error()))
     .rejects.toThrow('The path does not correspond to the markdown file');
   });
+
+  test('pasando --validate', () => {
+    const namePath = 'proofReadme.md'
+    const options = {validate:true}
+    return mdLinks.mdLinks(namePath, options).then(res => {
+      expect(res).toEqual(mocks.mdLinksResolveValidate);
+    });
+  })
 })
 
 
