@@ -8,7 +8,7 @@
   "description": "Librería que te ayudará a encontrar links en tus archivos markdown y validar su status",
   "main": "./src/index.js",
   "bin": {
-    "mdlinks": "./bin/cli.js"
+    "mdlinks": "bin/cli.js"
   },
   "directories": {
     "test": "test"
@@ -22,9 +22,6 @@
   "scripts": {
     "test": "jest --coverage"
   },
-  "repository": {
-    "url": "https://github.com/ljohanaalvarez/md-links.git"
-  },
   "keywords": [
     "markdown",
     ".md",
@@ -32,14 +29,16 @@
     "javascript"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/@ljohanaalvarez"
   },
-  "author": {
-    "name": "L Johana Álvarez <l.johanaalvarez@gmail.com>"
-  },
+  "author": "L Johana Álvarez <l.johanaalvarez@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ljohanaalvarez/md-links/issues"
   },
-  "homepage": "https://github.com/ljohanaalvarez/md-links#readme"
+  "homepage": "https://github.com/ljohanaalvarez/md-links#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljohanaalvarez/md-links.git"
+  }
 }
