@@ -1,6 +1,6 @@
 {
   "name": "@ljohanaalvarez/md-links",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "dependencies": {
     "jsdom": "^16.4.0",
     "marked": "^1.2.7"
@@ -29,7 +29,7 @@
     "javascript"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@ljohanaalvarez"
+    "registry": "https://npm.pkg.github.com/"
   },
   "author": "L Johana Álvarez <l.johanaalvarez@gmail.com>",
   "license": "MIT",
